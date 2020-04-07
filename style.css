@@ -13,7 +13,7 @@ body {
 ***********************/
 
 body {
-  background-color: #eee7e2;
+  background-color: #ebe4e2;
   display: flex;
   flex-direction: column;
   margin: 0px;
@@ -38,7 +38,9 @@ nav {
 
 header {
   justify-content: space-between;
-  background-color: darkgrey;
+  background-color: #6f929b;
+  box-shadow: rgb(46, 46, 46) 2px 2px 15px;
+  z-index: 99;
 }
 
 nav ul {
@@ -52,7 +54,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: white;
+  color: #191919;
   font-family: "Inter", sans-serif;
 }
 
@@ -66,21 +68,27 @@ nav ul li a {
 ** Main Content Styles
 ***********************/
 
+main {
+  padding: 30px 0;
+}
+
 .slider {
   height: 500px;
   background: center/cover no-repeat url("img/puppy2.jpg");
 }
 
 .feature {
-  background-color: white;
+  background-color: #f7f7f7;
   margin: 20px;
   padding: 20px;
   width: 400px;
+  box-shadow: rgb(101, 101, 101) 5px 5px 15px;
 }
 
 .feature h2 {
   text-align: center;
   padding: 10px;
+  font-size: 25px;
 }
 
 .feature p {
@@ -96,10 +104,11 @@ nav ul li a {
 ***********************/
 
 footer {
-  background-color: darkgray;
+  background-color: #6f929b;
   padding: 30px 20px;
   display: flex;
   justify-content: space-between;
+  box-shadow: rgb(136, 136, 136) -1px -1px 10px;
 }
 
 #footer-nav {
@@ -112,7 +121,11 @@ footer {
 }
 
 #footer-nav li a {
-  color: white;
+  color: #191919;
   font-family: "Inter", sans-serif;
   text-decoration: none;
+}
+
+#copyright {
+  color: #191919;
 }
