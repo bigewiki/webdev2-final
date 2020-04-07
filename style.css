@@ -1,12 +1,18 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter|Roboto&display=swap");
+/*
+How do you get a footer to stay at the bottom when there's not enough content to fill a page?
+*/
 
-html,
+/* html,
 body {
   height: 100%;
-}
+} */
+
+/***********************
+** Foundation Styles
+***********************/
 
 body {
-  font-family: "Roboto", sans-serif;
   background-color: #eee7e2;
   display: flex;
   flex-direction: column;
@@ -19,11 +25,94 @@ body {
   justify-content: center;
 }
 
-footer {
-  flex-shrink: 0;
-  margin-top: auto;
+/***********************
+** Header and Nav Styles
+***********************/
+
+header,
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-#validator {
-  padding: 5px;
+header {
+  justify-content: space-between;
+  background-color: darkgrey;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  margin-right: 30px;
+}
+
+nav ul li {
+  margin: 10px;
+}
+
+nav ul li a {
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+
+#logo {
+  height: 75px;
+  width: auto;
+  margin: 10px 30px;
+}
+
+/***********************
+** Main Content Styles
+***********************/
+
+.slider {
+  height: 500px;
+  background: center/cover no-repeat url("img/puppy2.jpg");
+}
+
+.feature {
+  background-color: white;
+  margin: 20px;
+  padding: 20px;
+  width: 400px;
+}
+
+.feature h2 {
+  text-align: center;
+  padding: 10px;
+}
+
+.feature p {
+  text-align: justify;
+}
+
+.feature img {
+  width: 100%;
+}
+
+/***********************
+** Footer Styles
+***********************/
+
+footer {
+  background-color: darkgray;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#footer-nav {
+  display: flex;
+}
+
+#footer-nav li {
+  list-style-type: none;
+  padding: 0px 5px;
+}
+
+#footer-nav li a {
+  color: white;
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
 }

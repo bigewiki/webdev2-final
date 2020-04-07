@@ -13,15 +13,98 @@
     <script></script>
   </head>
   <body>
-    <div class="flex-container">
-      Body Content
-    </div>
+    <header>
+      <a href="#">
+        <img src="img/rowdy-puppy-logo.png" alt="logo" id="logo" />
+      </a>
+      <nav>
+        <ul>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">New Puppies</a>
+          </li>
+          <li>
+            <a href="#">Training</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="slider"></div>
+    <main class="flex-container">
+      <section class="feature">
+        <img src="img/feature1.jpg" alt="" />
+        <h2>Title</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In iaculis
+          leo eu metus faucibus pretium. Donec laoreet nibh nec posuere rhoncus.
+          Praesent at sapien eros. Orci varius natoque penatibus et magnis dis
+          parturient montes, nascetur ridiculus mus. Pellentesque sit amet enim
+          id sapien commodo malesuada. Duis ultricies ligula a tincidunt
+          fringilla. Sed ut diam sed turpis semper placerat nec id orci. Fusce
+          pellentesque tortor id vehicula fringilla. Ut rutrum massa quis arcu
+          pretium, nec euismod metus feugiat. Praesent a metus mollis, venenatis
+          nunc lobortis, pellentesque quam. Vivamus sed lacus id tortor
+          ultricies euismod ac id eros. Morbi euismod tellus justo, a porta enim
+          fringilla vel.
+        </p>
+      </section>
+      <section class="feature">
+        <img src="img/feature2.jpg" alt="" />
+        <h2>Title</h2>
+        <p>
+          Lorem ipsum dolor sit amet, sed faucibus egestas, lacus nulla aliquam
+          eros, eget dictum leo diam quis quam. Nam facilisis condimentum odio,
+          eu consequat justo auctor pharetra. Etiam molestie euismod ex, non
+          pellentesque arcu blandit quis. Vivamus sit amet imperdiet nulla, sed
+          elementum libero. Vivamus sed maximus quam. Donec quis lacus in enim
+          sagittis mollis. Aenean sit amet purus ultrices, mattis est eu,
+          viverra felis.
+        </p>
+      </section>
+      <section class="feature">
+        <img src="img/feature3.jpg" alt="" />
+        <h2>Title</h2>
+        <p>
+          Lorem ipsum dolor sit amet, volutpat ligula eu velit rhoncus, quis
+          cursus nibh fermentum. Vivamus a dolor ac quam molestie cursus in
+          viverra leo. Nunc rutrum, orci nec maximus fermentum, lorem elit
+          semper dolor, id scelerisque elit est in lacus. Curabitur in massa
+          ante. Pellentesque ullamcorper felis sit amet rutrum dignissim. In
+          tempus dignissim dui non malesuada. Vivamus tincidunt ante ut risus
+          sollicitudin, sed posuere tellus cursus. Phasellus hendrerit risus
+          nulla, at tristique velit porta nec. Fusce elementum convallis tortor
+          eget elementum. Mauris egestas eros orci, ac interdum lorem elementum
+          eget. Duis convallis convallis mauris, bibendum mattis odio
+          pellentesque ut.
+        </p>
+      </section>
+    </main>
     <footer>
-      <div id="validator"></div>
+      <div id="footer-nav">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">New Puppies</a>
+        </li>
+        <li>
+          <a href="#">Training</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+      </ul>
+      </div>
+      <div id="copyright"></div>
       <script>
         document.getElementById(
-          "validator"
-        ).innerHTML = `<a href="http://validator.w3.org/nu/?doc=${window.location.href}" target="_blank">HTML 5 Validation</a>`;
+          "copyright"
+        ).innerHTML = `Copyright &copy; ${new Date().getFullYear()} The Rowdy Puppy`;
       </script>
     </footer>
   </body>
