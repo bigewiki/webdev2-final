@@ -1,12 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Inter|Roboto&display=swap");
-/*
-How do you get a footer to stay at the bottom when there's not enough content to fill a page?
-*/
-
-/* html,
-body {
-  height: 100%;
-} */
 
 /***********************
 ** Foundation Styles
@@ -23,6 +15,22 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+
+.extra-padding {
+  padding: 30px;
+}
+
+.extra-padding-x {
+  padding: 0 30px;
+}
+
+.extra-margin-right {
+  margin-right: 30px;
+}
+
+.extra-margin-left {
+  margin-left: 30px;
 }
 
 /***********************
@@ -79,10 +87,6 @@ main {
   padding: 0 0 30px 0;
 }
 
-.panel article {
-  padding: 0 30px;
-}
-
 .panel article p {
   padding-bottom: 20px;
   text-align: justify;
@@ -130,6 +134,22 @@ main {
   width: 100%;
 }
 
+figure img {
+  display: block;
+  width: 100%;
+}
+
+figure figcaption {
+  background-color: rgba(225, 225, 225, 0.6);
+  font-style: italic;
+  padding: 10px 0;
+  text-align: center;
+  position: relative;
+  height: 40px;
+  bottom: 40px;
+  margin-bottom: -40px;
+}
+
 /***********************
 ** Aside Styles
 ***********************/
@@ -137,10 +157,18 @@ main {
 .panel aside {
   background-color: #9b786f;
   padding: 20px;
-  margin-right: 20px;
+}
+
+.panel aside.sidebar {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.panel aside.horizontal-aside {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
 }
 
 .panel aside .subpage-wrapper-nav {
@@ -169,9 +197,14 @@ main {
   text-decoration: underline;
 }
 
-.panel .aside-img {
+.panel aside.sidebar .aside-img {
   width: 300px;
   height: auto;
+}
+
+.panel aside.horizontal-aside .aside-img {
+  height: 300px;
+  width: auto;
 }
 
 /***********************
