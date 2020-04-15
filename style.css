@@ -92,9 +92,15 @@ main {
   text-align: justify;
 }
 
-.panel article iframe {
+.panel article iframe,
+.panel article figure {
   float: right;
   margin: 0 0 30px 30px;
+}
+
+.panel article figure img {
+  width: 600px;
+  height: auto;
 }
 
 .title-wrapper {
