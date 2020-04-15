@@ -72,6 +72,37 @@ main {
   padding: 30px 0;
 }
 
+.panel {
+  background-color: #cdbbb7;
+  max-width: 1500px;
+  margin: 20px;
+  padding: 0 0 30px 0;
+}
+
+.panel article {
+  padding: 0 30px;
+}
+
+.panel article p {
+  padding-bottom: 20px;
+  text-align: justify;
+}
+
+.panel article iframe {
+  float: right;
+  margin: 0 0 30px 30px;
+}
+
+.title-wrapper {
+  background-color: #9b786f;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+.title-wrapper h1 {
+  font-size: 35px;
+}
+
 .slider {
   height: 500px;
   background: center/cover no-repeat url("img/puppy2.jpg");
@@ -97,6 +128,50 @@ main {
 
 .feature img {
   width: 100%;
+}
+
+/***********************
+** Aside Styles
+***********************/
+
+.panel aside {
+  background-color: #9b786f;
+  padding: 20px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.panel aside .subpage-wrapper-nav {
+  padding: 20px;
+}
+
+.panel aside h2 {
+  font-size: 25px;
+}
+
+.panel aside ul {
+  padding: 10px 20px;
+}
+
+.panel aside li {
+  padding: 15px 15px 15px 0;
+}
+
+.panel aside a {
+  text-decoration: none;
+  color: #212b2e;
+}
+
+.panel aside a:hover {
+  color: #13191b;
+  text-decoration: underline;
+}
+
+.panel .aside-img {
+  width: 300px;
+  height: auto;
 }
 
 /***********************
