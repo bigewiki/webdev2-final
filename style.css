@@ -69,7 +69,7 @@ nav ul li a {
 
 nav ul li a:hover {
   opacity: 1;
-  text-decoration: underline;
+  transition: all 0.5s;
 }
 
 #logo {
@@ -135,6 +135,9 @@ main {
   padding: 20px;
   width: 400px;
   box-shadow: rgb(101, 101, 101) 5px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .feature h2 {
@@ -149,6 +152,25 @@ main {
 
 .feature img {
   width: 100%;
+}
+
+.feature .feature-link {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+  text-decoration: none;
+  width: 50px;
+  font-size: 60px;
+  margin: 30px;
+  color: #9b786f;
+  opacity: 0.7;
+}
+
+.feature .feature-link:hover {
+  opacity: 1;
+  transition: opacity 0.5s;
 }
 
 figure img {
@@ -211,7 +233,7 @@ figure figcaption {
 
 .panel aside a:hover {
   color: #13191b;
-  text-decoration: underline;
+  transition: color 0.5s;
 }
 
 .panel aside.sidebar .aside-img {
@@ -249,6 +271,12 @@ footer {
   color: #191919;
   font-family: "Inter", sans-serif;
   text-decoration: none;
+  opacity: 0.7;
+}
+
+#footer-nav li a:hover {
+  opacity: 1;
+  transition: opacity 0.5s;
 }
 
 #copyright {
