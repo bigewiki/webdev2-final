@@ -5,6 +5,7 @@
 ***********************/
 
 body {
+  /* REQUIRMENT: ADDED 2020-04-18 - Background color */
   background-color: #ebe4e2;
   display: flex;
   flex-direction: column;
@@ -153,6 +154,8 @@ main {
 }
 
 .feature img {
+  /* REQUIREMENT ADDED 2020-04-18: Border */
+  border: 1px solid #d9d3d1;
   width: 100%;
 }
 
