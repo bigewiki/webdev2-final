@@ -130,63 +130,82 @@
                 <fieldset>
                   <!-- REQUIREMENT: LEGEND added 2020-04-26 -->
                   <legend>Tell us about you</legend>
-                  <!-- REQUIREMENT: FIELD LABEL added 2020-04-26 -->
-                  <label for="fname">Your first name*</label>
-                  <!-- REQUIREMENT: INPUT, PLACEHOLDER, AND REQUIRED added 2020-04-26 -->
-                  <input
-                    placeholder="John"
-                    name="fname"
-                    id="fname"
-                    type="text"
-                    required
-                  />
-                  <label for="lname">Your last name*</label>
-                  <input
-                    placeholder="Doe"
-                    name="lname"
-                    id="lname"
-                    type="text"
-                    required
-                  />
-                  <label for="email">Your Email*</label>
-                  <!-- REQUIREMENT: DATA TYPE 1 - EMAIL added 2020-04-26 -->
-                  <input
-                    placeholder="john_doe@email.com"
-                    name="email"
-                    id="email"
-                    type="email"
-                    required
-                  />
+                  <div>
+                    <!-- REQUIREMENT: FIELD LABEL added 2020-04-26 -->
+                    <label for="fname">Your first name*</label>
+                    <!-- REQUIREMENT: INPUT, PLACEHOLDER, AND REQUIRED added 2020-04-26 -->
+                    <input
+                      placeholder="John"
+                      name="fname"
+                      id="fname"
+                      type="text"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label for="lname">Your last name*</label>
+                    <input
+                      placeholder="Doe"
+                      name="lname"
+                      id="lname"
+                      type="text"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label for="email">Your Email*</label>
+                    <!-- REQUIREMENT: DATA TYPE 1 - EMAIL added 2020-04-26 -->
+                    <input
+                      placeholder="john_doe@email.com"
+                      name="email"
+                      id="email"
+                      type="email"
+                      required
+                    />
+                  </div>
                 </fieldset>
                 <fieldset>
                   <legend>Tell us about your puppy</legend>
-                  <label for="pupname">What's your puppy's name?</label>
-                  <!-- REQUIREMENT: PATTERN added 2020-04-26 -->
-                  <input
-                    placeholder="Lassy"
-                    name="pupname"
-                    id="pupname"
-                    type="text"
-                    pattern="^([^0-9]*)$"
-                  />
-                  <label for="pupage">How old is your puppy?</label>
-                  <!-- REQUIREMENT: DATA TYPE #2 - number added 2020-04-26 -->
-                  <!-- REQUIREMENT: MIN AND MAX added 2020-04-26 -->
-                  <input
-                    placeholder="3"
-                    name="pupage"
-                    id="pupage"
-                    type="number"
-                    min="2"
-                    max="24"
-                  /><span>Months</span>
+                  <div>
+                    <label for="pupname">What's your puppy's name?</label>
+                    <!-- REQUIREMENT: PATTERN added 2020-04-26 -->
+                    <input
+                      placeholder="Lassy"
+                      name="pupname"
+                      id="pupname"
+                      type="text"
+                      pattern="^([^0-9]*)$"
+                    />
+                  </div>
+                  <div>
+                    <label for="pupage"
+                      >How old is your puppy? (in months)</label
+                    >
+                    <!-- REQUIREMENT: DATA TYPE #2 - number added 2020-04-26 -->
+                    <!-- REQUIREMENT: MIN AND MAX added 2020-04-26 -->
+                    <input
+                      placeholder="3"
+                      name="pupage"
+                      id="pupage"
+                      type="number"
+                      min="2"
+                      max="24"
+                    />
+                  </div>
                 </fieldset>
-                <label for="comment">How can we help?</label>
-                <textarea name="comment" id="comment"></textarea>
-                <!-- REQUIREMENT: SUBMIT BUTTON added 2020-04-26 -->
-                <input type="submit" value="Submit" />
-                <!-- REQUIREMENT: RESET BUTTON added 2020-04-26 -->
-                <input type="reset" value="Reset" />
+                <fieldset class="column-fieldset">
+                  <legend>How can we help?</legend>
+                  <label for="comment"
+                    >Please leave your comment or question</label
+                  >
+                  <textarea name="comment" id="comment"></textarea>
+                </fieldset>
+                <div class="flex-container">
+                  <!-- REQUIREMENT: RESET BUTTON added 2020-04-26 -->
+                  <input type="reset" value="Reset" />
+                  <!-- REQUIREMENT: SUBMIT BUTTON added 2020-04-26 -->
+                  <input type="submit" value="Submit" />
+                </div>
               </form>
             </article>
           </div>
