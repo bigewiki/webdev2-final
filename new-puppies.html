@@ -17,14 +17,22 @@
     />
     <link rel="stylesheet" type="text/css" href="reset.css" />
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <script></script>
+    <script
+      src="https://kit.fontawesome.com/9bf2aeb3dd.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
-      <a href="#">
-        <img src="img/rowdy-puppy-logo.png" alt="logo" id="logo" />
-      </a>
-      <nav>
+      <div class="flex-space-between">
+        <a href="index.html">
+          <img src="img/rowdy-puppy-logo.png" alt="logo" id="logo" />
+        </a>
+        <div id="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+      <nav id="top-menu">
         <ul>
           <li>
             <a href="index.html">Home</a>
@@ -532,7 +540,7 @@
           <h2 id="crate-training">Crate Training</h2>
         </div>
         <article class="extra-padding-x">
-          <div class="flex-container tablet-column">
+          <div class="flex-container tablet-column extra-padding">
             <div class="half">
               <h3 id="consider-a-crate">Consider a Crate</h3>
               <p>
@@ -575,64 +583,68 @@
               ></iframe>
             </div>
           </div>
-          <h3 id="foundation">Foundation</h3>
-          <p>
-            You should be slow and methodical about introducing your pup to
-            their crate. Your puppy will learn to accept their crate as a safe
-            refuge over time if crate training is done correctly. Eventually,
-            they will choose to go in and out their crate willingly, with the
-            door wide open. Help foster, within your pup, a positive association
-            with their crate with a bit of training and motivation. Train them
-            to come in and out of their crate and reward them for the effort.
-            When first closing the door on them, show them the door opens again,
-            they aren’t trapped in there forever. Increase the duration as
-            gradually as you can. Make it cozy, get a crate mat or some
-            blankets. While they’re inside, give them a toy and/or a bone to
-            keep them occupied. Also, never use the crate as punishment.
-          </p>
-          <h3 id="exercise">Exercise</h3>
-          <p>
-            Make sure your pup has an opportunity to burn some energy before
-            they go into their crate. If you’re giving your puppy a break during
-            an extended stay in their crate and plan to put them back in, they
-            will need some activity during this time as well as being allowed
-            some time to do their outside business. Exercise, overall, helps
-            reduce anxiety and makes for a better behaved and more cooperative
-            dog. Fetch and tug-of-war are great ways for your puppy to burn some
-            energy and play at the same time.
-          </p>
-          <h3 id="potty-training">Potty Training</h3>
-          <p>
-            As previously mentioned, and covered in more detail in our
-            <a href="training.html#potty-training">potty training</a> section,
-            crates are a perfect supplement to potty training. Because crates
-            are a small area where your puppy stays for extended periods they
-            will learn not to use this space to relieve themselves and will
-            become conditioned to hold it until they can go outside. Consider
-            getting a large crate your pup can grow into and comes with a
-            separator you can use to section off part of the crate. You can
-            remove this partition once your pup is bigger and less likely to
-            have accidents inside their crate.
-          </p>
-          <h3 id="night-time">Night Time</h3>
-          <p>
-            Since puppies are prone to have accidents you may not want to let
-            your puppy sleep in your bed, at least not while they are very
-            young. They could also fall off, which could hurt them or be a very
-            unpleasant experience. When it’s bedtime move the crate inside your
-            bedroom, if needed, and position it so you and your pup have a clear
-            view of each other. This is very reassuring to your puppy,
-            especially for those first few nights. Place the kennel somewhere
-            higher off the ground if possible so they can see you better, at
-            least while your puppy gets used to sleeping in his/her crate.
-            Expect to hear a lot of whining, particularly at first. Be
-            understanding that this is a new and strange experience for them and
-            rest assured that it will get better over time. Expect, with your
-            new puppy, and while kennel training, to be woken up several times
-            at night. When your puppy starts getting a handle of potty training
-            these midnight whimpers, whines, and barks could be your pup’s way
-            of letting you know that they need to go outside.
-          </p>
+          <div class="extra-padding">
+            <h3 id="foundation">Foundation</h3>
+            <p>
+              You should be slow and methodical about introducing your pup to
+              their crate. Your puppy will learn to accept their crate as a safe
+              refuge over time if crate training is done correctly. Eventually,
+              they will choose to go in and out their crate willingly, with the
+              door wide open. Help foster, within your pup, a positive
+              association with their crate with a bit of training and
+              motivation. Train them to come in and out of their crate and
+              reward them for the effort. When first closing the door on them,
+              show them the door opens again, they aren’t trapped in there
+              forever. Increase the duration as gradually as you can. Make it
+              cozy, get a crate mat or some blankets. While they’re inside, give
+              them a toy and/or a bone to keep them occupied. Also, never use
+              the crate as punishment.
+            </p>
+            <h3 id="exercise">Exercise</h3>
+            <p>
+              Make sure your pup has an opportunity to burn some energy before
+              they go into their crate. If you’re giving your puppy a break
+              during an extended stay in their crate and plan to put them back
+              in, they will need some activity during this time as well as being
+              allowed some time to do their outside business. Exercise, overall,
+              helps reduce anxiety and makes for a better behaved and more
+              cooperative dog. Fetch and tug-of-war are great ways for your
+              puppy to burn some energy and play at the same time.
+            </p>
+            <h3 id="potty-training">Potty Training</h3>
+            <p>
+              As previously mentioned, and covered in more detail in our
+              <a href="training.html#potty-training">potty training</a> section,
+              crates are a perfect supplement to potty training. Because crates
+              are a small area where your puppy stays for extended periods they
+              will learn not to use this space to relieve themselves and will
+              become conditioned to hold it until they can go outside. Consider
+              getting a large crate your pup can grow into and comes with a
+              separator you can use to section off part of the crate. You can
+              remove this partition once your pup is bigger and less likely to
+              have accidents inside their crate.
+            </p>
+            <h3 id="night-time">Night Time</h3>
+            <p>
+              Since puppies are prone to have accidents you may not want to let
+              your puppy sleep in your bed, at least not while they are very
+              young. They could also fall off, which could hurt them or be a
+              very unpleasant experience. When it’s bedtime move the crate
+              inside your bedroom, if needed, and position it so you and your
+              pup have a clear view of each other. This is very reassuring to
+              your puppy, especially for those first few nights. Place the
+              kennel somewhere higher off the ground if possible so they can see
+              you better, at least while your puppy gets used to sleeping in
+              his/her crate. Expect to hear a lot of whining, particularly at
+              first. Be understanding that this is a new and strange experience
+              for them and rest assured that it will get better over time.
+              Expect, with your new puppy, and while kennel training, to be
+              woken up several times at night. When your puppy starts getting a
+              handle of potty training these midnight whimpers, whines, and
+              barks could be your pup’s way of letting you know that they need
+              to go outside.
+            </p>
+          </div>
         </article>
       </section>
       <section class="panel">

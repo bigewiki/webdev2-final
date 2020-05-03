@@ -583,16 +583,20 @@ input[type="reset"] {
   }
 }
 
+/* REQUIREMENT added 2020-05-03 media query 2 */
 @media only screen and (max-width: 799px) {
+  /* REQUIREMENT added 2020-05-03 media query property 1 */
   #logo {
     width: 100%;
     height: auto;
   }
 
+  /* REQUIREMENT added 2020-05-03 media query property 2 */
   .slider {
     height: 300px;
   }
 
+  /* REQUIREMENT added 2020-05-03 media query property 3 */
   #hamburger {
     display: block;
     font-size: 40px;
@@ -637,9 +641,105 @@ input[type="reset"] {
     flex-direction: column;
   }
 
-  section.feature {
+  section.feature,
+  section.panel {
     width: 90%;
-    max-width: 700px;
+    max-width: 600px;
     margin: 10px auto;
+  }
+
+  #pet-supplies-table,
+  #pet-supplies-table tr {
+    display: flex;
+    flex-direction: column;
+    box-sizing: content-box;
+  }
+
+  #pet-supplies-table td:first-child,
+  #pet-supplies-table td {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+  }
+
+  iframe {
+    width: 100% !important;
+    box-sizing: border-box;
+    margin: 0 !important;
+    float: none !important;
+  }
+
+  .extra-padding-x {
+    padding: 0;
+  }
+
+  .extra-margin-right {
+    margin: 0;
+  }
+
+  .tablet-column .half {
+    width: 100%;
+  }
+
+  .panel h2 {
+    padding-top: 10px;
+    display: block;
+  }
+
+  .panel h3 {
+    margin: 5px 0;
+  }
+
+  .extra-padding {
+    padding-top: 10px;
+  }
+
+  .panel aside.horizontal-aside .aside-img,
+  #about-fig img {
+    width: 100%;
+    height: auto;
+  }
+
+  #about-fig {
+    margin: 0 0 15px 0;
+  }
+
+  .panel aside.horizontal-aside {
+    flex-direction: column;
+  }
+
+  .mobile-column {
+    flex-direction: column;
+  }
+
+  form,
+  textarea {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+  }
+
+  address {
+    margin: 0;
+  }
+
+  form div {
+    flex-direction: column;
+  }
+
+  form .flex-container {
+    flex-direction: row;
+  }
+
+  form label,
+  form input {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    text-align: left;
+  }
+
+  textarea {
+    max-width: 300px;
   }
 }
