@@ -153,6 +153,7 @@ main {
   font-size: 25px;
 }
 
+/* REQUIREMENT added 2020-05-03 background image */
 .slider {
   height: 500px;
   background: center/cover no-repeat url("img/puppy2.jpg");
@@ -250,10 +251,33 @@ blockquote {
   line-height: 22px;
 }
 
+#about-fig {
+  position: relative;
+  bottom: 0px;
+  right: 0px;
+}
+
+/* REQUIREMENT added 2020-05-03 - advanced CSS styling on an image */
+#about-fig:hover {
+  box-shadow: rgb(101, 101, 101) 5px 5px 15px;
+  bottom: 5px;
+  right: 5px;
+  transition: all 0.3s;
+}
+
+/* REQUIREMENT added 2020-05-03 - CSS to remove border on iframe*/
+iframe {
+  border: none;
+}
+
+cite {
+  display: block;
+  margin-bottom: 10px;
+}
+
 .disclaimer {
   font-family: "Times New Roman", Times, serif;
   font-style: italic;
-  font-size: 15px;
 }
 
 /***********************
@@ -350,6 +374,12 @@ footer {
 
 #copyright {
   color: #191919;
+}
+
+address {
+  padding: 10px;
+  border: 1px solid black;
+  margin-left: 20px;
 }
 
 /***********************
