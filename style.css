@@ -116,7 +116,7 @@ main {
 .panel {
   background-color: #f7f7f7;
   max-width: 1500px;
-  margin: 20px 20px 50px 20px;
+  margin: 20px 0 50px 0;
   padding: 0 0 30px 0;
   box-shadow: rgb(101, 101, 101) 5px 5px 15px;
 }
@@ -582,9 +582,15 @@ input[type="reset"] {
   .column-fieldset label {
     width: 100%;
   }
+
+  section.feature,
+  section.panel {
+    width: 95%;
+    margin: 10px auto;
+  }
 }
 
-/* REQUIREMENT added 2020-05-03 media query 2 */
+/* REQUIREMENT added 2020-05-03 media query 2 (MOBILE) */
 @media only screen and (max-width: 799px) {
   /* REQUIREMENT added 2020-05-03 media query property 1 */
   #logo {
@@ -644,7 +650,7 @@ input[type="reset"] {
 
   section.feature,
   section.panel {
-    width: 90%;
+    width: 95%;
     max-width: 600px;
     margin: 10px auto;
   }
@@ -760,5 +766,10 @@ input[type="reset"] {
   /* REQUIREMENT added 2020-05-03 media query property 1 */
   main {
     display: flex;
+    justify-content: center;
+  }
+
+  main.sub-page-main {
+    flex-direction: column;
   }
 }
