@@ -503,7 +503,7 @@ input[type="reset"] {
 /***********************
 ** Responsive Styles
 ***********************/
-.hamburger {
+#hamburger {
   display: none;
 }
 
@@ -593,7 +593,7 @@ input[type="reset"] {
     height: 300px;
   }
 
-  .hamburger {
+  #hamburger {
     display: block;
     font-size: 40px;
     text-align: right;
@@ -601,7 +601,7 @@ input[type="reset"] {
     padding-right: 20px;
   }
 
-  .hamburger:hover {
+  #hamburger:hover {
     cursor: pointer;
   }
 
@@ -619,12 +619,14 @@ input[type="reset"] {
     align-items: center;
   }
 
-  header nav ul {
+  #top-menu {
+    display: none;
+  }
+
+  #top-menu ul {
     flex-direction: column;
     text-align: center;
     font-size: 25px;
-    height: 0;
-    display: none;
   }
 
   #footer-nav {
