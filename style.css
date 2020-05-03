@@ -26,6 +26,10 @@ body {
   padding: 0 30px;
 }
 
+.extra-padding-y {
+  padding: 30px 0;
+}
+
 .extra-margin-right {
   margin-right: 30px;
 }
@@ -36,6 +40,16 @@ body {
 
 .sub-page-main {
   margin: 0 auto;
+}
+
+.flex-left {
+  display: flex;
+  justify-content: start;
+}
+
+.half {
+  width: 50%;
+  margin: 0;
 }
 
 /***********************
@@ -92,7 +106,7 @@ main {
 }
 
 .panel {
-  background-color: #cdbbb7;
+  background-color: #f7f7f7;
   max-width: 1500px;
   margin: 20px 20px 50px 20px;
   padding: 0 0 30px 0;
@@ -100,8 +114,9 @@ main {
 }
 
 .panel article h2 {
-  font-size: 25px;
+  font-size: 27px;
   padding-bottom: 5px;
+  color: #2e3e42;
 }
 
 .panel article p {
@@ -115,13 +130,17 @@ main {
   margin: 0 0 30px 30px;
 }
 
+.panel article .half iframe {
+  float: none;
+}
+
 .panel article figure img {
   width: 600px;
   height: auto;
 }
 
 .title-wrapper {
-  background-color: #9b786f;
+  background-color: #b69e97;
   margin-bottom: 30px;
   padding: 20px;
 }
@@ -199,8 +218,32 @@ figure figcaption {
   margin-bottom: -40px;
 }
 
-.panel-text {
-  max-width: 600px;
+.subtitle {
+  text-align: center !important;
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #323232;
+}
+
+.panel h3 {
+  font-size: 20px;
+  margin: 20px 0 10px 0;
+  color: #34454a;
+}
+
+.panel li {
+  margin-left: 20px;
+  padding: 5px;
+}
+
+blockquote {
+  border-left: 4px solid #42575d;
+  margin: 0px 10px 15px 50px;
+  padding: 10px;
+  font-size: 19px;
+  color: #34454a;
+  text-align: justify;
+  line-height: 22px;
 }
 
 /***********************
@@ -208,7 +251,7 @@ figure figcaption {
 ***********************/
 
 .panel aside {
-  background-color: #9b786f;
+  background-color: #b69e97;
   padding: 20px;
 }
 
@@ -237,17 +280,19 @@ figure figcaption {
 }
 
 .panel aside li {
-  padding: 15px 15px 15px 0;
+  padding: 5px;
 }
 
 .panel aside a {
   text-decoration: none;
   color: #212b2e;
+  opacity: 0.8;
 }
 
 .panel aside a:hover {
   color: #13191b;
-  transition: color 0.5s;
+  transition: all 0.5s;
+  opacity: 1;
 }
 
 .panel aside.sidebar .aside-img {
