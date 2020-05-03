@@ -510,6 +510,7 @@ input[type="reset"] {
 /* REQUIREMENT added 2020-05-03 media query 1 */
 @media only screen and (min-width: 800px) and (max-width: 1250px) {
   .tablet-column {
+    display: flex;
     flex-direction: column;
   }
 
@@ -709,6 +710,7 @@ input[type="reset"] {
   }
 
   .mobile-column {
+    display: flex;
     flex-direction: column;
   }
 
@@ -741,5 +743,22 @@ input[type="reset"] {
 
   textarea {
     max-width: 300px;
+  }
+}
+
+/* REQUIREMENT added 2020-05-03 media query 3 (desktop) */
+@media only screen and (min-width: 1251px) {
+  /* REQUIREMENT added 2020-05-03 media query property 1 */
+  .desktop-row {
+    display: flex;
+    flex-direction: row;
+  }
+  /* REQUIREMENT added 2020-05-03 media query property 1 */
+  .panel {
+    margin: 20px 30px 50px 30px;
+  }
+  /* REQUIREMENT added 2020-05-03 media query property 1 */
+  main {
+    display: flex;
   }
 }
