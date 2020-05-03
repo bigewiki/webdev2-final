@@ -110,7 +110,7 @@ main {
   max-width: 1500px;
   margin: 20px 20px 50px 20px;
   padding: 0 0 30px 0;
-  box-shadow: rgb(46, 46, 46) 2px 2px 15px;
+  box-shadow: rgb(101, 101, 101) 5px 5px 15px;
 }
 
 .panel article h2 {
@@ -147,6 +147,10 @@ main {
 
 .title-wrapper h1 {
   font-size: 35px;
+}
+
+.title-wrapper h2 {
+  font-size: 25px;
 }
 
 .slider {
@@ -244,6 +248,12 @@ blockquote {
   color: #34454a;
   text-align: justify;
   line-height: 22px;
+}
+
+.disclaimer {
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  font-size: 15px;
 }
 
 /***********************
