@@ -18,6 +18,10 @@ body {
   justify-content: center;
 }
 
+.flex-space-between {
+  display: flex;
+}
+
 .extra-padding {
   padding: 30px;
 }
@@ -36,6 +40,10 @@ body {
 
 .extra-margin-left {
   margin-left: 30px;
+}
+
+.small-margin-top {
+  margin-top: 10px;
 }
 
 .sub-page-main {
@@ -280,6 +288,34 @@ cite {
   font-style: italic;
 }
 
+#pet-supplies-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#pet-supplies-table td {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+#pet-supplies-table td h3 {
+  text-align: center;
+}
+
+#pet-supplies-table td p {
+  margin: 0;
+  padding: 0;
+}
+
+/* REQUIREMENT: use a pseudo element */
+#pet-supplies-table td:first-child {
+  width: 150px;
+}
+
+#pet-supplies-table .small-margin-top {
+  margin-top: 10px;
+}
+
 /***********************
 ** Aside Styles
 ***********************/
@@ -462,4 +498,146 @@ input[type="submit"] {
 
 input[type="reset"] {
   background-color: #ff6666;
+}
+
+/***********************
+** Responsive Styles
+***********************/
+.hamburger {
+  display: none;
+}
+
+/* REQUIREMENT added 2020-05-03 media query 1 */
+@media only screen and (min-width: 800px) and (max-width: 1250px) {
+  .tablet-column {
+    flex-direction: column;
+  }
+
+  /* REQUIREMENT added 2020-05-03 media query selector 1 */
+  .tablet-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  /* REQUIREMENT added 2020-05-03 media query selector 2 */
+  ul.tablet-row li {
+    width: 33%;
+    margin: 0;
+    list-style-type: none;
+    padding: 10px;
+  }
+
+  /* REQUIREMENT added 2020-05-03 media query selector 3 */
+  ul.tablet-row li ul li {
+    list-style-type: disc;
+    padding: 10px 0 0 0;
+  }
+
+  .tablet-margin-top {
+    margin-top: 30px;
+  }
+
+  .tablet-hide {
+    display: none;
+  }
+
+  .tablet-column .half {
+    width: 100%;
+  }
+
+  section.feature {
+    width: 90%;
+    max-width: 700px;
+    margin: 10px auto;
+  }
+
+  .panel article iframe {
+    float: none;
+  }
+
+  .panel aside.horizontal-aside {
+    flex-direction: column;
+  }
+
+  #about-fig {
+    width: 100%;
+  }
+
+  .panel aside.horizontal-aside .aside-img,
+  #about-fig img {
+    width: 100%;
+    height: auto;
+  }
+
+  form {
+    width: 500px;
+  }
+
+  textarea {
+    width: 400px;
+  }
+
+  .column-fieldset label {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 799px) {
+  #logo {
+    width: 100%;
+    height: auto;
+  }
+
+  .slider {
+    height: 300px;
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 40px;
+    text-align: right;
+    width: 100%;
+    padding-right: 20px;
+  }
+
+  .hamburger:hover {
+    cursor: pointer;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  header,
+  nav {
+    flex-direction: column;
+  }
+
+  header .flex-space-between {
+    width: 100%;
+    align-items: center;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    text-align: center;
+    font-size: 25px;
+    height: 0;
+    display: none;
+  }
+
+  #footer-nav {
+    display: none;
+  }
+
+  .tablet-column {
+    flex-direction: column;
+  }
+
+  section.feature {
+    width: 90%;
+    max-width: 700px;
+    margin: 10px auto;
+  }
 }
